@@ -3,39 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScamCheck | Stay Safe Online</title>
+    <title>ScamCheck | Instant Fraud Detection</title>
     <link href="https://googleapis.com" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>ScamCheck</h1>
-            <p class="subtitle">Paste a text, email, link, or upload a screenshot to instantly see if it's a scam.</p>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">🛡️ ScamCheck</div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <span class="badge">Beta v1.0</span>
+            </div>
+        </nav>
+
+        <!-- Main Hero Section -->
+        <header class="hero">
+            <h1>Stop Frauds & Scams Instantly</h1>
+            <p class="subtitle">Paste suspicious text, emails, phone numbers, or links. Our system analyzes threat markers and explains the risk in plain English.</p>
         </header>
 
         <main>
-            <!-- Custom Fake Input Box to show how the app works -->
-            <div class="input-demo-box">
-                <input type="text" placeholder="Paste link, phone number, email, or message text here..." disabled>
-                <button class="demo-btn">Analyze Message</button>
+            <!-- Mock Scan Console -->
+            <div class="console-box">
+                <div class="console-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="console-title">Security Scanner</span>
+                </div>
+                <div class="console-body">
+                    <textarea placeholder="Paste a suspicious SMS message, text, email snippet, or URL link here..." readonly>URGENT: Your bank account has been temporarily restricted due to unauthorized login attempts. Please click here immediately to verify your identity: http://secure-bank-login-update.com</textarea>
+                    <div class="console-actions">
+                        <button class="scan-btn">Run Scan</button>
+                    </div>
+                </div>
             </div>
 
-            <h2 class="section-title">Our Top Project Roadmap</h2>
-            <div class="grid">
-                <div class="card active-card">
-                    <h3>🥇 1. ScamCheck (10/10)</h3>
-                    <p>An AI-powered tool that analyzes messages and explains fraud risks in plain English. Built for parents, grandparents, and businesses alike.</p>
-                </div>
-                <div class="card">
-                    <h3>🥈 2. FairPrice (9.8/10)</h3>
-                    <p>Instantly know if an item on Marketplace, eBay, or Craigslist is a bargain or overpriced using aggregated recent sales data.</p>
-                </div>
-                <div class="card">
-                    <h3>🥉 3. LifeVault (9.6/10)</h3>
-                    <p>One secure, organized dashboard for all of your critical life data, tracking receipts, warranties, and renewal deadlines.</p>
-                </div>
+            <!-- Threat Report Preview -->
+            <div class="report-box animate-pulse">
+                <div class="report-title">🔴 Threat Level: High Risk (9/10)</div>
+                <p class="report-text"><strong>Analysis:</strong> This link mimics a real bank but directs to an unverified domain registered 2 days ago. The urgent wording is designed to bypass logical checking.</p>
             </div>
+
+            <!-- Feature Showcase -->
+            <section id="features" class="feature-section">
+                <h2 class="section-title">Built for Everyone</h2>
+                <div class="grid">
+                    <div class="card">
+                        <div class="card-icon">💬</div>
+                        <h3>SMS & Texts</h3>
+                        <p>Protect parents and grandparents from fake package delivery updates and bank fraud texts.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📧</div>
+                        <h3>Email Phishing</h3>
+                        <p>Drop corporate phishing templates or urgent spoof emails to see if headers match sender data.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🌐</div>
+                        <h3>Domain Checker</h3>
+                        <p>Analyze links and URL pathways instantly before clicking on unknown social media advertisements.</p>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
 </body>
